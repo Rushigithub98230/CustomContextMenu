@@ -1,0 +1,30 @@
+
+<h1>Doctor Appointments</h1>
+
+<table>
+    <thead>
+      <tr>
+        <th>Patient Name</th>
+        <th>Date of Birth</th>
+        <th>Appointment Date</th>
+        <th>Type</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Doctor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Open the context menu on right-click by using (contextmenu) instead of (click) -->
+      <tr   *ngFor="let appointment of appointments; let i = index" (contextmenu)="onContextMenu($event, appointment)">
+        <td>{{ appointment.patientName }}</td>
+        <td>{{ appointment.patientDob }}</td>
+        <td>{{ appointment.appointmentDate }}</td>
+        <td>{{ appointment.appointmentType }}</td>
+        <td>{{ appointment.startTime }}</td>
+        <td>{{ appointment.endTime }}</td>
+        <td>{{ appointment.doctorName }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+<app-context-menu (itemClick)="onMenuItemClick($event)"></app-context-menu>
