@@ -1,4 +1,4 @@
-# CustomContextMenu2(created a custom context menu that opens on right-click and can be used on table rows, calendar blocks, and more.)
+# CustomContextMenu2(created a custom context menu that opens on right-click and can be used on table rows, calendar blocks, and more)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
 
